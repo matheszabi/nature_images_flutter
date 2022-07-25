@@ -12,21 +12,35 @@ This example:
 
 
 iOS: - list with with thumbnails
+
 ![ios screenshot1](/screenshots_iOS/flutter_01.png?raw=true "Optional Title")
 
+
+
 iOS: - details screen (tap on list view element)
+
 ![ios screenshot2](/screenshots_iOS/flutter_02.png?raw=true "Optional Title")
 
+
+
 iOS: - loading screen 
+
 ![ios screenshot5](/screenshots_iOS/flutter_05.png?raw=true "Optional Title")
 
 
+
 Android: loading screen connection checking 
+
 ![android screenshot1](/screenshots_Android/flutter_01.png?raw=true "Optional Title")
 
 
+
 Android: thumbnails loaded
+
 ![android screenshot2](/screenshots_Android/flutter_02.png?raw=true "Optional Title")
 
+
+
 Android: list with 3rd page 
+
 ![android screenshot3](/screenshots_Android/flutter_03.png?raw=true "Optional Title")
