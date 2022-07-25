@@ -1,16 +1,32 @@
-# nature_images_flutter
+# nature_images_flutter.
 
-Load images from Pexels
+This example:
+- has a working splash screen, not just a 1x1 pixel image stretched to full screen, but a full size image.
+- has application icons ( generated with a library, which is removed, because it is a one-time use tool).
+- has a loading screen (with 3 color gradients) and a status message about what is doing right now.
+- the loading screen when it finishes and it will go to home screen, it will remove the possibility to come back to this screen (Android press the Back button) 
+- It will do an HTTP GET and it will receive a JSON and it will parse it to "model" objects. Plain Old Dart Objects (podo).
+- It will load the thumbnails (smaller images) and it will build a list.
+- with Prev and Next it implemented the infinite scrolling list.
+- clicking on the list it shows the detail of the element (another info wich is a bigger, scrollable image).
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+iOS: - list with with thumbnails
+![ios screenshot1](/screenshots_iOS/flutter_01.png?raw=true "Optional Title")
 
-A few resources to get you started if this is your first Flutter project:
+iOS: - details screen (tap on list view element)
+![ios screenshot2](/screenshots_iOS/flutter_02.png?raw=true "Optional Title")
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+iOS: - loading screen 
+![ios screenshot5](/screenshots_iOS/flutter_05.png?raw=true "Optional Title")
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Android: loading screen connection checking 
+![android screenshot1](/screenshots_Android/flutter_01.png?raw=true "Optional Title")
+
+
+Android: thumbnails loaded
+![android screenshot2](/screenshots_Android/flutter_02.png?raw=true "Optional Title")
+
+Android: list with 3rd page 
+![android screenshot3](/screenshots_Android/flutter_03.png?raw=true "Optional Title")
