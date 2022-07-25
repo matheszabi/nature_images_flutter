@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <!-- https://stackoverflow.com/a/39299465/5505680 -->
+        <!-- for large images use the drawable-nodpi-->
+        <bitmap android:gravity="center" android:src="@drawable/volcano"/>
+    </item>
+</layer-list>
