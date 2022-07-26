@@ -44,3 +44,10 @@ Android: thumbnails loaded
 Android: list with 3rd page 
 
 ![android screenshot3](/screenshots_Android/flutter_03.png?raw=true "Optional Title")
+
+
+
+Test code coverage:
+
+![tests screenshot](/screenshots_tests/Screenshot_1.png?raw=true "Optional Title")
+

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:nature_images_flutter/podo/photo.dart';
+import 'package:http/http.dart' as http;
 
 import '../network/pagination_helper.dart';
 import '../network/pexels_api_search_nature.dart';
@@ -100,7 +100,7 @@ class AppInitialedPageState extends State<AppInitialedPage> {
       return;
     }
 
-    var paginationInfo = await PexelsApiSearchNature().getPrevPage();
+    var paginationInfo = await PexelsApiSearchNature(http.Client()).getPrevPage();
 
     _loadPage(paginationInfo);
   }
@@ -112,7 +112,7 @@ class AppInitialedPageState extends State<AppInitialedPage> {
       return;
     }
 
-    var paginationInfo = await PexelsApiSearchNature().getNextPage();
+    var paginationInfo = await PexelsApiSearchNature(http.Client()).getNextPage();
 
     _loadPage(paginationInfo);
   }

@@ -13,6 +13,19 @@ import '../podo/pagination_info.dart';
 import 'pagination_helper.dart';
 
 class PexelsApiSearchNature {
+  /// https://docs.flutter.dev/cookbook/testing/unit/mocking
+  ///
+  ///Provide an http.Client to the function. This allows providing the correct http.Client depending on the situation.
+  ///For Flutter and server-side projects, provide an http.IOClient.
+  ///For Browser apps, provide an http.BrowserClient.
+  ///For tests, provide a mock http.Client.
+  ///
+  // Use the provided client to fetch data from the internet,
+  // rather than the static http.get() method, which is difficult to mock.
+  final http.Client _client;
+
+  PexelsApiSearchNature(this._client);
+
   //
   Future<PaginationInfo?> getFirstPage() async {
     String url = 'https://api.pexels.com/v1/search?query=nature&per_page=${PaginationHelper().perPage}';
@@ -24,7 +37,7 @@ class PexelsApiSearchNature {
 
     debugPrint('_getPage() url: $url');
 
-    final response = await http.get(Uri.parse(url), headers: headers);
+    final response = await _client.get(Uri.parse(url), headers: headers);
     debugPrint('Status code from Pexels: ${response.statusCode}');
 
     if (response.statusCode == 200) {

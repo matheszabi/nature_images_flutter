@@ -117,7 +117,7 @@ class AppInitializingPageState extends State<AppInitializingPage> {
     changeMessageTo('Loading first image list data');
     await Future.delayed(const Duration(seconds: seconds1));
 
-    var paginationInfo = await PexelsApiSearchNature().getFirstPage();
+    var paginationInfo = await PexelsApiSearchNature(http.Client()).getFirstPage();
 
     if (paginationInfo != null) {
       changeMessageTo('Loaded the first image list data');
